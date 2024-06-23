@@ -1,98 +1,94 @@
-/* General Styles */
+/* Basic styling for layout and aesthetics */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
-}
-
-#main {
-    max-width: 1200px;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  main {
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-}
-
-/* Hero Section */
-.hero {
-    background-image: url('hero-background.jpg'); /* Add your image path */
-    background-size: cover;
-    background-position: center;
-    height: 500px; /* Adjust height as needed */
-    position: relative;
-}
-
-.overlay {
-    background-color: rgba(54, 9, 152, 0.415);
-    height: 100%;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+  }
+  
+  form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  input[type="text"], input[type="date"], select, textarea {
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.hero-content {
-    color: #fff;
-}
-
-.hero-content h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-}
-
-.hero-content p {
-    font-size: 1.2em;
-    margin-bottom: 40px;
-}
-
-.btn {
-    display: inline-block;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
     padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
-
-/* Features Section */
-.features {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-}
-
-.feature-item {
-    text-align: center;
-    max-width: 300px;
-}
-
-.feature-item i {
-    font-size: 3em;
-    margin-bottom: 20px;
-    color: #007bff;
-}
-
-.feature-item h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.feature-item p {
-    font-size: 1.1em;
-}
-
-/* Footer */
-.footer {
-    text-align: center;
-    margin-top: 50px;
-    padding: 20px 0;
     background-color: #333;
-    color: #fff;
-}
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .completed {
+    background-color: #d9ffd6;
+    /* light green */
+  }
+  
+  .progress {
+    background-color: #e7f0fe;
+    /* light blue */
+  }
+  
+  .high-priority {
+    border-left: 5px solid #ff6347;
+    /* tomato */
+  }
+  
+  .medium-priority {
+    border-left: 5px solid #ffa500;
+    /* orange */
+  }
+  
+  .low-priority {
+    border-left: 5px solid #32cd32;
+    /* lime green */
+  }
+   
